@@ -1,15 +1,12 @@
 import { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Tes from './tes/Tes';
+import './app.scss';
+import Game from './Game/Game';
 
 function App() {
   const [count, setCount] = useState(0);
-
   return (
     <div className='App'>
-      HELLO WORLD
-      <Tes />
+      <Game />
     </div>
   );
 }

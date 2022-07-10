@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Square from '../Square/Square.js';
 import { INITIAL_GAME_STATE } from '../utils/tempData.js';
 
 const Game = () => {
@@ -9,9 +10,7 @@ const Game = () => {
       <div className='main'>
         <div className='board'>
           {gameState.map((el: string, key: string) => (
-            <div key={key} className='listItem'>
-              {el}
-            </div>
+            <Square key={key}>{el}</Square>
           ))}
         </div>
       </div>
